@@ -1,10 +1,10 @@
 import { TwitterApi } from "twitter-api-v2";
 
 const client = new TwitterApi({
-  appKey: "oapzlwfSiLMSYHx8F2k7Fceq5",
-  appSecret: "daW5Y37rKZzqYLw7FfV0NF9XhEvejGwp7ZluanXBnlpI6D5FWd",
-  accessToken: "1889766730001686529-M2OVXm4e17PRg4lPd8o2lgla6osXmW",
-  accessSecret: "shRmz6JyUM9pd5tZM6fR97pNT0BRQghAyOicluG9hAiXm",
+  appKey: process.env.TWITTER_APP_KEY as string,
+  appSecret: process.env.TWITTER_APP_SECRET as string,
+  accessToken: process.env.TWITTER_ACCESS_TOKEN as string,
+  accessSecret: process.env.TWITTER_ACCESS_SECRET as string,
 });
 
 // Function to tweet the coin flip result

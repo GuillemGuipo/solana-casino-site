@@ -1,0 +1,15 @@
+# Node modules
+agario-backend/node_modules/
+coinflip-backend/node_modules/
+
+# Build output
+agario-backend/dist/
+coinflip-backend/dist/
+
+# Logs
+agario-backend/*.log
+coinflip-backend/*.log
+
+# Environment files
+coinflip-backend/.env
+agario-backend/.env
